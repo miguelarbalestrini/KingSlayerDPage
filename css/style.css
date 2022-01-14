@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-size: clamp(16px, 4vw, 20px);
+    text-decoration: none;
+    list-style: none;
+}
+
+footer a{
+    color: #DFE0E2;
+}
+
+footer a:hover{
+    color: #bfc0c3;
 }
 
 body{
@@ -10,11 +20,12 @@ body{
     background-color: #071013;
 }
 
-h1 {
+h1{
     text-align: center;
     margin: 2%;
 }
-.card {
+
+.card{
     border-color: #071013;
     color: #071013;
     width: 50%; 
@@ -23,4 +34,8 @@ h1 {
 
 .videoSlayer{
     height: 270px;
+}
+
+footer{
+    padding: 2%;
 }
