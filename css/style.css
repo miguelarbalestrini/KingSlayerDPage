@@ -7,35 +7,93 @@
     list-style: none;
 }
 
-footer a{
-    color: #DFE0E2;
-}
-
-footer a:hover{
-    color: #bfc0c3;
-}
-
-body{
-    color: #DFE0E2;
-    background-color: #071013;
+header{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    margin-bottom:1.5%;
 }
 
 h1{
-    text-align: center;
-    margin: 2%;
+    color:white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: clamp(56px, 4vw, 72px);
+    font-family: 'Grechen Fuemen', cursive;
+    font-weight: 400;
+}
+
+h2{
+    font-size: clamp(24px, 4vw, 36px);
+    margin-top: 0;
+    padding-top: 0;
+    color:red;
+    font-family: 'Yuji Syuku', serif;
+    margin-left: 10%;
+}
+
+.card__container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card{
-    border-color: #071013;
-    color: #071013;
-    width: 50%; 
-    background-color: #DFE0E2;
+    padding: 0.5%;
+    width: 55%;
+} 
+
+.card__video{
+    height: 460px;
 }
 
-.videoSlayer{
-    height: 270px;
+.card__text{
+    color:white;
+    padding:4% 3% 0 3%;
+    text-align: center;
+}
+
+.card__footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom:1.3%;
 }
 
 footer{
-    padding: 2%;
+    background-color: #000000;
+    padding:0.5%;
+    margin-top: 1.5%;
+}
+
+footer a i{
+    color:white;
+}
+
+footer a i:hover{
+    color: #bfc0c3;
+}
+
+
+@media only screen and (max-width:540px) {
+    
+    header{
+        margin-bottom: 0;
+    }
+
+    h2{
+        margin-left: 25%;
+    }
+
+    .card{
+        padding: 0.5%;
+        width: 100%;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+    
 }
